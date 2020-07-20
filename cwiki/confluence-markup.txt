@@ -1,0 +1,814 @@
+h1. PT3 API for Physical Training Tracker
+
+*Version:* 1.0.0
+
+----
+
+{toc:printable=true|style=square|minLevel=2|maxLevel=3|type=list|outline=false|include=.*}
+
+h2. Endpoints
+
+    h3. searchAirForceStandard
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /AirForceStandards/searchAirForceStandard
+    {code}
+    *Summary:* searches for AirForce Standard
+    *Description:* searches AirForce Standard based on age and sex
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |searchAirForceStandard |searches for AirForce Standard |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. addAirForceTest
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /AirForceTests/addAirForceTest
+    {code}
+    *Summary:* adds completed AirForce Test
+    *Description:* adds a completed AirForce Test
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |addAirForceTest |adds AirForce Test |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. searchAirForceTest
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /AirForceTests/searchAirForceTest
+    {code}
+    *Summary:* searches for completed AirForce Test
+    *Description:* searches for completed AirForce Test by username
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |searchAirForceTest |searches AirForce Tests |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. searchArmyStandard
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /ArmyStandards/searchArmyStandard
+    {code}
+    *Summary:* searches for Army Standard
+    *Description:* searches Army Standard based on age and sex
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |searchArmyStandard |searches for Army Standard |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. addArmyTest
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /ArmyTests/addArmyTest
+    {code}
+    *Summary:* adds completed Army Test
+    *Description:* adds a completed Army Test
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |addArmyTest |adds Army Test |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. searchArmyTest
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /ArmyTests/searchArmyTest
+    {code}
+    *Summary:* searches for completed Army Test
+    *Description:* searches for completed Army Test by username
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |searchArmyTest |searches Army Tests |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. searchMarineStandard
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /MarineStandards/searchMarineStandard
+    {code}
+    *Summary:* searches for Marine Standard
+    *Description:* searches Marine Standard based on age and sex
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |searchMarineStandard |searches for Marine Standard |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. addMarineTest
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /MarineTests/addMarineTest
+    {code}
+    *Summary:* adds completed Marine Test
+    *Description:* adds a completed Marine Test
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |addMarineTest |adds Marine Test |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. searchMarineTest
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /MarineTests/searchMarineTest
+    {code}
+    *Summary:* searches for completed Marine Test
+    *Description:* searches for completed Marine Test by username
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |searchMarineTest |searches Marine Tests |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. searchNavyStandard
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /NavyStandards/searchNavyStandard
+    {code}
+    *Summary:* searches for Navy Standard
+    *Description:* searches Navy Standard based on age and sex
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |searchNavyStandard |searches for Navy Standard |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. addNavyTest
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /NavyTests/addNavyTest
+    {code}
+    *Summary:* adds completed Navy Test
+    *Description:* adds a completed Navy Test
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |addNavyTest |adds Navy Test |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. searchNavyTest
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /NavyTests/searchNavyTest
+    {code}
+    *Summary:* searches for completed Navy Test
+    *Description:* searches for completed Navy Test by username
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |searchNavyTest |searches Navy Tests |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. addUser
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /users/addUser
+    {code}
+    *Summary:* Adds a user
+    *Description:* Adds a user to the PT3 app
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |addUser |Registers a new user |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+    h3. loginUser
+    {status:colour=Yellow|title=post|subtle=false}
+    {code}
+    post /users/loginUser
+    {code}
+    *Summary:* Logs in a user
+    *Description:* Logs in a user to PT3
+
+
+    h4. Parameters
+
+        h5. Body Parameter
+        ||Name||Description||Required||Default||Pattern||
+        |loginUser |Login a user |(x) | |  |
+
+
+
+
+
+
+
+    h4. Responses
+        *Status Code:* 200
+        *Message:*     OK
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "OK"
+}
+        {code}
+        *Status Code:* 404
+        *Message:*     URL not found
+        {code:title=Response Type}
+
+        {code}
+        See [#models]
+
+
+
+        {code:title=Response Schema |collapse=true}
+{
+  "description" : "URL not found"
+}
+        {code}
+    ----
+
+h2. Models
+
+        h3. AddAirForceTest
+        ||Field Name||Required||Type||Description||
+         |username | |String | |
+ |sex | |String | |
+ |age | |Integer | |
+ |pushups | |Integer | |
+ |situps | |Integer | |
+ |run | |String | |
+ |passed | |Boolean | |
+        h3. AddArmyTest
+        ||Field Name||Required||Type||Description||
+         |username | |String | |
+ |sex | |String | |
+ |age | |Integer | |
+ |pushups | |Integer | |
+ |situps | |Integer | |
+ |run | |String | |
+ |passed | |Boolean | |
+        h3. AddMarineTest
+        ||Field Name||Required||Type||Description||
+         |username | |String | |
+ |sex | |String | |
+ |age | |Integer | |
+ |pullups | |Integer | |
+ |crunches | |Integer | |
+ |run | |String | |
+ |passed | |Boolean | |
+        h3. AddNavyTest
+        ||Field Name||Required||Type||Description||
+         |username | |String | |
+ |sex | |String | |
+ |age | |Integer | |
+ |pushups | |Integer | |
+ |curlups | |Integer | |
+ |run | |String | |
+ |passed | |Boolean | |
+        h3. AddUser
+        ||Field Name||Required||Type||Description||
+         |name | |String | |
+ |username | |String | |
+ |password | |String | |
+ |email | |String | |
+        h3. LoginUser
+        ||Field Name||Required||Type||Description||
+         |username | |String | |
+ |password | |String | |
+        h3. SearchAirForceStandard
+        ||Field Name||Required||Type||Description||
+         |sex | |String | |
+ |age | |Integer | |
+        h3. SearchAirForceTest
+        ||Field Name||Required||Type||Description||
+         |username | |String | |
+        h3. SearchArmyStandard
+        ||Field Name||Required||Type||Description||
+         |sex | |String | |
+ |age | |Integer | |
+        h3. SearchArmyTest
+        ||Field Name||Required||Type||Description||
+         |username | |String | |
+        h3. SearchMarineStandard
+        ||Field Name||Required||Type||Description||
+         |sex | |String | |
+ |age | |Integer | |
+        h3. SearchMarineTest
+        ||Field Name||Required||Type||Description||
+         |username | |String | |
+        h3. SearchNavyStandard
+        ||Field Name||Required||Type||Description||
+         |sex | |String | |
+ |age | |Integer | |
+        h3. SearchNavyTest
+        ||Field Name||Required||Type||Description||
+         |username | |String | |
